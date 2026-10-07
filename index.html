@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LogLens 丹青日志 — Fast large-file log &amp; JSONL viewer for Windows</title>
+<meta name="description" content="LogLens (丹青日志) is a blazing-fast viewer for huge log and JSONL files on Windows. Memory-mapped engine, JSONL as a table, multi-file timeline merge. Free tier forever.">
+<style>
+  :root { --ink:#1a1f1c; --dim:#5b6660; --accent:#2f6f5e; --line:#e3eae6; --bg:#fbfdfc; --card:#f2f7f4; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Segoe UI",system-ui,-apple-system,sans-serif; color:var(--ink);
+         background:var(--bg); line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 24px; }
+  header { padding:72px 0 40px; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .brand img { width:56px; height:56px; border-radius:12px; }
+  h1 { font-size:32px; letter-spacing:-0.5px; }
+  h1 .cn { font-size:20px; color:var(--dim); font-weight:500; margin-left:8px; }
+  .tagline { font-size:19px; color:var(--dim); margin-top:14px; max-width:600px; }
+  .tagline strong { color:var(--accent); font-weight:600; }
+  section { padding:28px 0; border-top:1px solid var(--line); }
+  h2 { font-size:20px; margin-bottom:14px; letter-spacing:-0.3px; }
+  ul { list-style:none; }
+  ul li { padding:5px 0 5px 24px; position:relative; color:#333c37; }
+  ul li::before { content:"▪"; position:absolute; left:2px; color:var(--accent); }
+  ul li b { font-weight:600; }
+  table { width:100%; border-collapse:collapse; font-size:15px; }
+  th, td { text-align:left; padding:10px 12px; border-bottom:1px solid var(--line); }
+  th { color:var(--dim); font-weight:600; font-size:13px; text-transform:uppercase; letter-spacing:0.4px; }
+  .price { font-weight:700; color:var(--accent); }
+  .note { font-size:14px; color:var(--dim); margin-top:10px; }
+  .card { background:var(--card); border-radius:10px; padding:18px 20px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  footer { padding:32px 0 56px; border-top:1px solid var(--line);
+           font-size:14px; color:var(--dim); }
+  footer .links { display:flex; flex-wrap:wrap; gap:8px 24px; margin:10px 0 16px; }
+  footer .links a { font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <img src="https://raw.githubusercontent.com/14uncle/danqing-log/dev/assets/logo/log_256.png" alt="LogLens logo">
+      <h1>LogLens<span class="cn">丹青日志</span></h1>
+    </div>
+    <p class="tagline">The fast viewer for <strong>huge log and JSONL files</strong> on Windows.
+      Memory-mapped engine: opens 1&nbsp;GB logs in about a second, searches them in ~100&nbsp;ms.
+      Free tier forever.</p>
+  </header>
+
+  <section>
+    <h2>Why LogLens</h2>
+    <ul>
+      <li><b>Gigabyte-scale in milliseconds</b> — memory-mapped, line-indexed; random access at 0.5&nbsp;µs/line. 10&nbsp;GB files open in seconds.</li>
+      <li><b>JSONL as a table</b> — columns auto-detected, nested rows expand in place, field filters without writing a query language.</li>
+      <li><b>Multi-file timeline merge</b> — merge logs from several services by timestamp and trace one request across them. <i>(v1.x)</i></li>
+      <li><b>Field analytics</b> — p50/p99 percentiles and value distributions on any JSON field. <i>(v1.x)</i></li>
+      <li><b>Export</b> — filtered results as raw lines, pretty JSON, or Excel-ready CSV. <i>(v1.x)</i></li>
+      <li><b>Named workspace sessions</b> — save and restore your whole triage setup: filters, columns, expansions. <i>(v1.x)</i></li>
+      <li><b>Chinese-friendly</b> — GBK / UTF-16 / UTF-8 detection that just works; Chinese text searchable.</li>
+      <li><b>Portable</b> — a single &lt;5&nbsp;MB zip, no installer, no registry writes.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Pricing — perpetual, one-time payment</h2>
+    <table>
+      <tr><th></th><th>Price</th><th>For</th></tr>
+      <tr><td><b>Free</b></td><td class="price">$0 forever</td>
+          <td>Full single-file viewing. Personal, non-commercial use.</td></tr>
+      <tr><td><b>Personal</b></td><td class="price">$29 once</td>
+          <td>Everything, bought by you for your own use — commercial use is fine.
+              All v1.x updates included.</td></tr>
+      <tr><td><b>Business</b></td><td class="price">$59 / seat once</td>
+          <td>Organization-funded purchases (company card, reimbursement, rollout).
+              One designated user per seat; reassignable.</td></tr>
+    </table>
+    <p class="note">No subscriptions, no update window, no activation limits, free machine
+      transfers. Purchase links go live at the v1.x launch — until then the free tier is
+      the full product for personal use.</p>
+  </section>
+
+  <section>
+    <h2>Download</h2>
+    <ul>
+      <li><a href="https://github.com/14uncle/danqing-log/releases/latest">GitHub Releases</a> — portable zip, &lt;5&nbsp;MB, unzip and run</li>
+      <li>Microsoft Store — search “LogLens 丹青日志”; store-managed updates</li>
+      <li><a href="https://github.com/14uncle/danqing-log">Source code</a> — open source (MIT / Apache-2.0)</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Legal &amp; policies</h2>
+    <div class="card">
+      <ul>
+        <li><a href="https://github.com/14uncle/danqing-log/blob/dev/docs/eula.md">Terms of Service (EULA, 中文/English)</a></li>
+        <li><a href="https://github.com/14uncle/danqing-log/blob/dev/docs/privacy-policy.md">Privacy Policy (隐私政策)</a></li>
+        <li><a href="https://github.com/14uncle/danqing-log/blob/dev/docs/eula.md">Refund Policy</a> — 30-day no-questions-asked refund (EULA §5)</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="https://github.com/14uncle/danqing-log/issues">GitHub Issues</a>
+      <a href="mailto:gwhun@qq.com">gwhun@qq.com</a>
+      <a href="https://github.com/14uncle/danqing-log">github.com/14uncle/danqing-log</a>
+    </div>
+    <p>LogLens 丹青日志 is an independent product by Danqing (丹青). Windows 10 1809+ (x64).</p>
+  </footer>
+
+</div>
+</body>
+</html>
