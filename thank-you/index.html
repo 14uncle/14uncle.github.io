@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Thank you — LogLens 丹青日志</title>
+<meta name="description" content="Thank you for purchasing LogLens. Your license key is delivered by email, usually within 24 hours.">
+<style>
+  :root { --ink:#1a1f1c; --dim:#5b6660; --accent:#2f6f5e; --line:#e3eae6; --bg:#fbfdfc; --card:#f2f7f4; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:"Segoe UI",system-ui,-apple-system,sans-serif; color:var(--ink);
+         background:var(--bg); line-height:1.65; }
+  .wrap { max-width:760px; margin:0 auto; padding:0 24px; }
+  header { padding:72px 0 40px; }
+  .brand { display:flex; align-items:center; gap:16px; }
+  .brand img { width:56px; height:56px; border-radius:12px; }
+  h1 { font-size:32px; letter-spacing:-0.5px; }
+  h1 .cn { font-size:20px; color:var(--dim); font-weight:500; margin-left:8px; }
+  .tagline { font-size:19px; color:var(--dim); margin-top:14px; max-width:600px; }
+  section { padding:28px 0; border-top:1px solid var(--line); }
+  h2 { font-size:20px; margin-bottom:14px; letter-spacing:-0.3px; }
+  ol { padding-left:24px; }
+  ol li { padding:5px 0; color:#333c37; }
+  ol li b { font-weight:600; }
+  .card { background:var(--card); border-radius:10px; padding:18px 20px; }
+  .note { font-size:14px; color:var(--dim); margin-top:10px; }
+  a { color:var(--accent); text-decoration:none; }
+  a:hover { text-decoration:underline; }
+  footer { padding:32px 0 56px; border-top:1px solid var(--line);
+           font-size:14px; color:var(--dim); }
+  footer .links { display:flex; flex-wrap:wrap; gap:8px 24px; margin:10px 0 16px; }
+  footer .links a { font-weight:600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="brand">
+      <img src="../assets/logo.png" alt="LogLens logo">
+      <h1>Thank you<span class="cn">感谢您的购买</span></h1>
+    </div>
+    <p class="tagline">Your LogLens order is complete. Here is what happens next.</p>
+  </header>
+
+  <section>
+    <h2>What happens next</h2>
+    <ol>
+      <li><b>Receipt.</b> Paddle (our merchant of record) emails your receipt and
+        invoice right away.</li>
+      <li><b>License key.</b> Keys are issued by hand — your key will be emailed
+        to your checkout address, <b>usually within 24 hours</b>.</li>
+      <li><b>Activate.</b> In LogLens: <b>Settings → License tab</b> (设置 →
+        许可页签) → paste the key → Activate. Works fully offline.</li>
+    </ol>
+    <p class="note">Nothing arrived after 24 hours? Check spam first, then reach
+      us — we will make it right.</p>
+  </section>
+
+  <section>
+    <h2>中文说明</h2>
+    <div class="card">
+      <p>付款已完成。许可证 key 为<b>人工签发</b>，通常在 <b>24 小时内</b>发送到你
+        结账时填写的邮箱（Paddle 的收据邮件会先一步到达，那不是 key）。</p>
+      <p style="margin-top:10px">激活：LogLens <b>设置 → 许可页签</b> → 粘贴 key →
+        激活。全程离线可用。超过 24 小时未收到请先翻垃圾箱，再找我们。</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Support &amp; refunds</h2>
+    <p>Questions, problems, or a key that never arrived:
+      <a href="https://github.com/14uncle/danqing-log/issues">GitHub Issues</a>.
+      30-day no-questions refund per the
+      <a href="https://github.com/14uncle/danqing-log/blob/master/docs/eula.md">EULA</a>
+      — just reply to your key email.</p>
+  </section>
+
+  <footer>
+    <div class="links">
+      <a href="..">← LogLens home</a>
+      <a href="https://github.com/14uncle/danqing-log">GitHub</a>
+      <a href="https://github.com/14uncle/danqing-log/blob/master/docs/privacy-policy.md">Privacy</a>
+    </div>
+    <p>© 2026 Danqing · LogLens 丹青日志 · Sold by Paddle (merchant of record)</p>
+  </footer>
+
+</div>
+</body>
+</html>
